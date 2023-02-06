@@ -6,6 +6,8 @@ const Product = new Schema ({
     description:{type:String,maxLength:600},
     img: {type: String,maxLength:250},
     slug: {type:String},
+    oldPrice: {type: String},
+    salePrice: {type: String},
     createdAt: {type:Date, default:Date.now},
     updatedAt: {type:Date, default:Date.now},
 

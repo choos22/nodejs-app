@@ -1,34 +1,145 @@
+<div class="app">
 <div class="mt-4">
-    <div class="row">
-    <div class="col-lg-4">
-        <img src="{{{product.img}}}" alt="">
+    <div class="row product-view">
+    <div class="col-lg-4 ">
+        <img src="{{{product.img}}}" alt="" class="img-show">
+    </div>
+    <div class="col-lg-4 product-shop">
+        <h1 class="swatch-name" >{{product.name}}</h1>
+        <div class="sale-Price">
+            {{product.salePrice}}
+        </div>
+        <div class="box-tag">
+            <div class="quantity">
+                Hàng có sẵn
+            </div>
+        </div>
+        <div class="add-to-box">
+            <div class="add-to-card" style="float:left; width:100%">
+                <div class="pull-left" style="float:left; width:100%">
+                    {{!-- <div class="selector-wrapper" style="text-align: left; margin-bottom:15px">
+                        <label for="">Kích Thước</label>
+                        <select name="" id="" class="single-option-selector" data-option="option1">
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                        </select>
+                    </div> --}}
+                    
+                </div>
+            </div>
+            <div class="pro-size">Chọn Size:</div> 
+            <div class="swatch">
+                <div class="swatch-element">
+                    <input type="radio" name="option-0" value="39">
+                    <label for="swatch">
+                        39
+                    </label>
+                </div>
+
+                <div class="swatch-element">
+                    <input type="radio" name="option-0" value="40">
+                    <label for="swatch">
+                        40
+                    </label>
+                </div>
+
+                <div class="swatch-element">
+                    <input type="radio" name="option-0" value="41">
+                    <label for="swatch">
+                        41
+                    </label>
+                </div>
+
+                <div class="swatch-element">
+                    <input type="radio" name="option-0" value="42">
+                    <label for="swatch">
+                        42
+                    </label>
+                </div>
+
+                <div class="swatch-element">
+                    <input type="radio" name="option-0" value="43">
+                    <label for="swatch">
+                        43
+                    </label>
+                </div>
+
+                <div class="swatch-element">
+                    <input type="radio" name="option-0" value="44">
+                    <label for="swatch">
+                        44
+                    </label>
+                </div>
+
+                <div class="swatch-element">
+                    <input type="radio" name="option-0" value="45">
+                    <label for="swatch">
+                        45
+                    </label>
+                </div>
+            </div>
+            <div class="add-to-card add-to-card-2">
+                <label for="qty" class="dgm">Chọn số lượng</label>
+            </div>
+        </div>
     </div>
     <div class="col-lg-4">
-        <h1>{{product.name}}</h1>
+        <div class="policy policy-product">
+            <div class="list">
+                <div class="policy-item">
+                    <div class="policy-icon kshs">
+                        <div class="policy-text">
+                            <p style="text-transform: uppercase;font-weight: bold;">KHÔNG SỢ HẾT SIZE</p>
+                            <p>Do chẳng cần đợi nhân viên chốt Đơn/p>
+                        </div>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-icon kshs">
+                        <div class="policy-text">
+                            <p style="text-transform: uppercase;font-weight: bold;">KHÔNG SỢ HẾT SIZE</p>
+                            <p>Do chẳng cần đợi nhân viên chốt Đơn/p>
+                        </div>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-icon kshs">
+                        <div class="policy-text">
+                            <p style="text-transform: uppercase;font-weight: bold;">KHÔNG SỢ HẾT SIZE</p>
+                            <p>Do chẳng cần đợi nhân viên chốt Đơn/p>
+                        </div>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-icon kshs">
+                        <div class="policy-text">
+                            <p style="text-transform: uppercase;font-weight: bold;">KHÔNG SỢ HẾT SIZE</p>
+                            <p>Do chẳng cần đợi nhân viên chốt Đơn/p>
+                        </div>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-icon kshs">
+                        <div class="policy-text">
+                            <p style="text-transform: uppercase;font-weight: bold;">KHÔNG SỢ HẾT SIZE</p>
+                            <p>Do chẳng cần đợi nhân viên chốt Đơn/p>
+                        </div>
+                    </div>
+                </div>
+                <div class="policy-item">
+                    <div class="policy-icon kshs">
+                        <div class="policy-text">
+                            <p style="text-transform: uppercase;font-weight: bold;">KHÔNG SỢ HẾT SIZE</p>
+                            <p>Do chẳng cần đợi nhân viên chốt Đơn/p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
     </div>
-    <div class="col-lg-4">
-        KHÔNG SỢ HẾT SIZE
-
-        Do chẳng cần đợi nhân viên chốt đơn
-
-        GIAO HÀNG TOÀN QUỐC
-
-        Gửi hàng đi luôn trong ngày
-
-        THANH TOÁN LINH HOẠT
-
-        Tiền mặt/CK/ví điện tử/thẻ
-
-        ĐỔI SIZE THOẢI MÁI
-
-        Đến khi anh em hài lòng
-
-        BẢO HÀNH TRỌN ĐỜI
-
-        Lại dễ dàng chỉ cần đọc SĐT
-
-        LUÔN LUÔN TRI ÂN
-
-        100% tích điểm, giảm giá lần sau    
-    </div>
+</div>
 </div>
